@@ -1,0 +1,28 @@
+# Question 1
+import numpy as np
+arr=np.random.rand(10,1)
+print(arr)
+print("Mean: ",np.mean(arr))
+#Question 2
+import numpy as np
+arr=np.random.rand(20,1)
+print(arr)
+print("Variance: ",np.var(arr))
+print("Standard Deviation: ",np.std(arr))
+#Question 3
+import numpy as np
+A=np.random.rand(10,20)
+B=np.random.rand(20,25)
+arrMul=np.matmul(A,B)
+print(arrMul)
+print(np.shape(arrMul))
+print(np.sum(arrMul))
+#Question 4
+import numpy as np
+arr=np.random.rand(10,1)
+print("Random Array: ",arr)
+print('*'*40)
+def fxn(x):
+    return (1/(1+np.exp(-x)))
+newArr=np.apply_along_axis(fxn,0,arr)
+print("New Array: ",newArr)
